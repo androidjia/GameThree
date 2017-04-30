@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+        <com.zexh.gamethree.customView.MainArticleFragmentViewPager
+            android:id="@+id/activity_mian_articlefragment_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.zexh.gamethree.customView.MainArticleFragmentViewPager>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:background="@drawable/point_shape"
+                />
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:background="@drawable/point_shape"/>
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:background="@drawable/point_shape"/>
+        </LinearLayout>
+    </FrameLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id = "@+id/activity_main_articlefragment_pulltorefresh_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#19000000"
+        android:dividerHeight="4dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        app:ptrMode = "both">
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</LinearLayout>
